@@ -51,19 +51,32 @@ This project offers REST API and WebSocket endpoints for real-time financial ins
 
 - **Get List of Instruments:**
 
-  `GET /api/prices/instruments`
+  `GET /api/instruments`
 
   Returns the list of available financial instruments.
 
   Example response:
 
   ```json
-  ["BTCUSD", "ETHUSD", "EURUSD"]
+  [
+  {
+    "symbol": "BTCUSD",
+    "name": "Bitcoin / USD"
+  },
+  {
+    "symbol": "EURUSD",
+    "name": "Euro / USD"
+  },
+  {
+    "symbol": "USDJPY",
+    "name": "USD / Yen"
+  }
+]
   ```
 
 - **Get Current Price:**
 
-  `GET /api/prices/currentprice/{instrument}`
+  `GET /api/instruments/{symbol}/price`
 
   Returns the current price of the specified financial instrument.
 
@@ -71,15 +84,16 @@ This project offers REST API and WebSocket endpoints for real-time financial ins
 
   ```json
   {
-  	"Instrument": "BTCUSD",
-  	"Price": 66315.15
+  "symbol": "BTCUSD",
+  "price": 82701,
+  "timestamp": "2025-03-30T18:26:55.063Z"
   }
   ```
 
 ## WebSocket
 - **Subscribe to Live Price Updates:**
 
-Connect to `ws://localhost:5273/ws` using a WebSocket client to receive live updates for BTCUSD from Binance.
+Connect to `ws://localhost:7211/ws` using a WebSocket client to receive live updates for BTCUSD from Binance.
 
 ## Troubleshooting
 If you run into any issues, consider the following:
