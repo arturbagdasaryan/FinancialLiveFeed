@@ -82,23 +82,7 @@ This project offers REST API and WebSocket endpoints for real-time financial ins
 
 Connect to `ws://localhost:5273/ws` using a WebSocket client to receive live updates for BTCUSD from Binance.
 
-## Project Structure
-- **Program.cs:** Main entry point of the application, configures services, and sets up endpoints.
-- **WebSocketConnectionManager.cs:** Manages WebSocket connections and broadcasting messages.
-- **PriceStore.cs:** Stores and updates the latest prices.
-- **Controllers/PricesController.cs:** Handles REST API requests for financial instrument prices.
-- **Services/BinanceWebSocketService.cs:** Background service that connects to Binance WebSocket and updates prices.
-- **Hubs/PriceHub.cs:** Defines the SignalR hub that clients can connect to for receiving real-time updates.
-- **wwwroot/:** Contains static files for the project, including a sample client (index.html) to test SignalR connections.
-## Logging
-The application logs important events and errors to the console. Ensure you check the console output for real-time logging information.
-
-## Notes
-- The application subscribes to the Binance WebSocket stream for BTCUSD price updates. You can modify the code to subscribe to additional instruments if needed.
-- The application is designed to handle over 1,000 WebSocket subscribers efficiently.
-
 ## Troubleshooting
-If you encounter any issues, please check the following:
-- Ensure you have .NET 8.0 SDK installed and properly set up on your machine.
-- Check the console logs for any error messages.
-- Ensure you have a stable internet connection to connect to Binance WebSocket.
+If you run into any issues, consider the following:
+- Confirm that the .NET 8.0 SDK is installed and properly configured on your system.
+- Verify that your internet connection is stable for connecting to the Binance WebSocket.
