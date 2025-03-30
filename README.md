@@ -71,7 +71,7 @@ This project offers REST API and WebSocket endpoints for real-time financial ins
     "symbol": "USDJPY",
     "name": "USD / Yen"
   }
-]
+  ]
   ```
 
 - **Get Current Price:**
