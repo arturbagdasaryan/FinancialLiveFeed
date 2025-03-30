@@ -1,4 +1,4 @@
-# Financial Price Service
+# Financial Live Feed Service
 
 This project offers REST API and WebSocket endpoints for real-time financial instrument pricing, utilizing data from Binance. It is designed to handle over 1,000 concurrent subscribers with high efficiency.
 
@@ -7,6 +7,18 @@ This project offers REST API and WebSocket endpoints for real-time financial ins
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - A code editor (e.g., [Visual Studio Code](https://code.visualstudio.com/))
 
+## Features
+
+- **REST API**: Fetch the list of available instruments and get the latest price for a specific instrument.
+- **WebSocket**: Real-time price updates via WebSocket subscription to multiple instruments.
+- **Data Source**: Live data from Binance's WebSocket API.
+- **Scalable**: Designed to efficiently handle 1,000+ concurrent WebSocket subscribers.
+
+## Technology Stack
+
+- **Backend**: .NET Core, SignalR, WebSocket for real-time data
+- **Frontend**: SignalR client for receiving updates
+- **External API**: Binance WebSocket API for instrument prices
 ## Setup and Run
 
 1. **Clone the repository:**
