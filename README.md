@@ -16,8 +16,7 @@ This project offers REST API and WebSocket endpoints for real-time financial ins
 
 ## Technology Stack
 
-- **Backend**: .NET Core, SignalR, WebSocket for real-time data
-- **Frontend**: SignalR client for receiving updates
+- **Backend**: .NET Core, WebSocket for real-time data
 - **External API**: Binance WebSocket API for instrument prices
 ## Setup and Run
 
