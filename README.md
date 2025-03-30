@@ -1,7 +1,6 @@
 # Financial Price Service
 
-This project provides REST API and WebSocket endpoints for live financial instrument prices sourced from Binance. It supports efficiently handling over 1,000 subscribers.
-This  implementation supports dynamic handling of multiple financial instruments.
+This project offers REST API and WebSocket endpoints for real-time financial instrument pricing, utilizing data from Binance. It is designed to handle over 1,000 concurrent subscribers with high efficiency.
 
 ## Prerequisites
 
