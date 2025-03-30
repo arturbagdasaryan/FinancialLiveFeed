@@ -12,8 +12,8 @@ This project offers REST API and WebSocket endpoints for real-time financial ins
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/khachatur/FinancialPriceService.git
-   cd FinancialPriceService
+   git clone https://github.com/arturbagdasaryan/FinancialLiveFeed.git
+   cd FinancialLiveFeed
    ```
 
 2. **Restore the dependencies:**
@@ -33,9 +33,6 @@ This project offers REST API and WebSocket endpoints for real-time financial ins
    ```sh
    dotnet run
    ```
-5. **Open the sample client:**
-
-   Open `wwwroot/index.html` in a web browser to see real-time price updates.
 
 ## Endpoints
 
